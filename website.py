@@ -15,7 +15,7 @@ st.title("Todo App")
 st.subheader("this is my todo app")
 st.write("This app is build by <b>Pritam</b>", unsafe_allow_html=True)
 
-st.text_input(label="", placeholder="Add new todo.......", on_change=add_todo, key="new todo")
+st.text_input(label="", placeholder="Add new todo........", on_change=add_todo, key="new todo")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
